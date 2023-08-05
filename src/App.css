@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* Colors and styling */
+
+:root{
+    --BrandDark: rgba(31, 34, 51, 1);
+    --BrandLight: rgba(71, 82, 132, 1);
+    --BrandDefault:rgba(54, 61, 99, 1);
+    --BrandAccent:rgba(255, 51, 119, 1);
+    --Action:rgba(0, 170, 255, 1);
+    --Pending:rgba(133, 92, 214, 1);
+    --Warning:rgba(255, 187, 51, 1);
+    --Error:rgba(255, 51, 85, 1);
+    --Success:rgba(0, 204, 170, 1);
+    --WhiteColor: rgba(255, 255, 255, 1);
+    --LightGrey:rgba(244, 246, 247, 1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+a{
+    text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+li{
+    list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+.icon{
+    font-size: 2rem;
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.flex{
+    display:flex;
+    align-items: center;
 }
+
+
+.grid{
+    display: grid;
+    align-items: center;
+}
+
+.btn{
+    padding: .6rem 1.5rem;
+    background: var(--BrandDefault);
+    border-radius: 3rem;
+    outline:none;
+    cursor:pointer;
+}
+
+
+.btn a{
+    color: var(--WhiteColor);
+    font-weight: 500;
+
+}
+
+/* .btn:hover{
+    background: var(--SecondaryColor);
+} */
+
+
+input{
+    font-size: 100%;
+}
+
+/* body{
+    background: var(--bodyColor);
+} */
